@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:24.10
 
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -y qemu-kvm libvirt-daemon-system libvirt-clients virtinst cpu-checker libguestfs-tools libosinfo-bin make unzip python3-pip jq git
